@@ -10,16 +10,16 @@
   />
   <style>
     :root {
-      --bg: #f6f8fc;
+      --bg: #f7f4ef;
       --surface: #ffffff;
-      --text: #1b2230;
-      --muted: #5f6b7a;
-      --accent: #1f3a5f;
-      --accent-dark: #162b47;
-      --accent-soft: #8b2e3a;
-      --accent-soft-dark: #6f1f2c;
-      --border: #dbe3ef;
-      --shadow: 0 10px 30px rgba(20, 34, 56, 0.10);
+      --text: #2d2924;
+      --muted: #6f675f;
+      --accent: #5e4f41;
+      --accent-dark: #4a3d31;
+      --accent-soft: #b79d7a;
+      --accent-soft-dark: #9d8564;
+      --border: #e7ddd1;
+      --shadow: 0 10px 30px rgba(45, 41, 36, 0.08);
       --radius: 18px;
       --max-width: 1180px;
     }
@@ -75,7 +75,7 @@
 
     .btn-primary:hover {
       transform: translateY(-1px);
-      filter: brightness(0.96);
+      filter: brightness(0.97);
     }
 
     .btn-secondary {
@@ -85,7 +85,7 @@
     }
 
     .btn-secondary:hover {
-      background: rgba(31, 58, 95, 0.06);
+      background: rgba(94, 79, 65, 0.06);
     }
 
     .section {
@@ -107,7 +107,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(246, 248, 252, 0.92);
+      background: rgba(247, 244, 239, 0.92);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
     }
@@ -163,7 +163,7 @@
 
     .hero-copy h2 {
       font-size: clamp(1.1rem, 2vw, 1.5rem);
-      color: var(--accent-soft);
+      color: var(--accent-soft-dark);
       font-weight: 700;
       margin-bottom: 16px;
       letter-spacing: 0.2px;
@@ -174,13 +174,6 @@
       font-size: 1.08rem;
       max-width: 650px;
       margin-bottom: 28px;
-    }
-
-    .hero-actions {
-      display: flex;
-      gap: 14px;
-      flex-wrap: wrap;
-      margin-bottom: 26px;
     }
 
     .hero-badges {
@@ -202,7 +195,6 @@
     .hero-card,
     .feature-card,
     .room-card,
-    .review-card,
     .contact-card {
       background: var(--surface);
       border: 1px solid var(--border);
@@ -222,7 +214,6 @@
     .features-grid,
     .rooms-grid,
     .gallery-grid,
-    .reviews-grid,
     .footer-grid {
       display: grid;
       gap: 22px;
@@ -233,14 +224,12 @@
     }
 
     .feature-card,
-    .review-card,
     .contact-card {
       padding: 24px;
     }
 
     .feature-card h3,
     .room-card h3,
-    .review-card h3,
     .contact-card h3 {
       margin-bottom: 10px;
       font-size: 1.15rem;
@@ -249,7 +238,6 @@
 
     .feature-card p,
     .room-card p,
-    .review-card p,
     .contact-card p {
       color: var(--muted);
     }
@@ -279,8 +267,8 @@
     }
 
     .chip {
-      background: rgba(139, 46, 58, 0.08);
-      color: var(--accent-soft);
+      background: rgba(183, 157, 122, 0.14);
+      color: var(--accent-dark);
       padding: 8px 12px;
       border-radius: 999px;
       font-size: 0.9rem;
@@ -293,16 +281,6 @@
 
     .gallery-grid img {
       height: 220px;
-    }
-
-    .reviews-grid {
-      grid-template-columns: repeat(3, 1fr);
-    }
-
-    .stars {
-      font-size: 1.1rem;
-      margin-bottom: 12px;
-      color: var(--accent-soft);
     }
 
     .cta-box {
@@ -345,7 +323,6 @@
       .features-grid,
       .rooms-grid,
       .gallery-grid,
-      .reviews-grid,
       .footer-grid {
         grid-template-columns: 1fr;
       }
@@ -510,9 +487,9 @@
 
         <div class="gallery-grid">
           <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Camera elegante" />
-          <img src="Terrazzo1.jpg" />
-          <img src="Terrazzo2.jpg" />
-          <img src="Terrazzo3.jpg" />
+          <img src="Terrazzo1.jpg" alt="Terrazzo di Villa Costanza" />
+          <img src="Terrazzo2.jpg" alt="Terrazzo con vista" />
+          <img src="Terrazzo3.jpg" alt="Spazio esterno di Villa Costanza" />
         </div>
       </div>
     </section>
