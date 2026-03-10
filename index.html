@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Villa Costanza | B&B</title>
+  <title>Villa Costanza | Rooms Apartment</title>
   <meta
     name="description"
-    content="Villa Costanza è un B&B accogliente e rilassante, ideale per chi cerca comfort, tranquillità e ospitalità autentica."
+    content="Villa Costanza Rooms Apartment a Ripa Teatina, in Abruzzo. Un soggiorno elegante tra comfort, tranquillità e ospitalità autentica."
   />
   <style>
     :root {
-      --bg: #f7f4ef;
+      --bg: #f6f8fc;
       --surface: #ffffff;
-      --text: #1f1f1f;
-      --muted: #6a6a6a;
-      --accent: #8a6a4a;
-      --accent-dark: #6f543a;
-      --border: #e8dfd4;
-      --shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+      --text: #1b2230;
+      --muted: #5f6b7a;
+      --accent: #1f3a5f;
+      --accent-dark: #162b47;
+      --accent-soft: #8b2e3a;
+      --accent-soft-dark: #6f1f2c;
+      --border: #dbe3ef;
+      --shadow: 0 10px 30px rgba(20, 34, 56, 0.10);
       --radius: 18px;
       --max-width: 1180px;
     }
@@ -63,16 +65,17 @@
       font-weight: 700;
       transition: 0.25s ease;
       border: 2px solid transparent;
+      cursor: pointer;
     }
 
     .btn-primary {
-      background: var(--accent);
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
       color: #fff;
     }
 
     .btn-primary:hover {
-      background: var(--accent-dark);
       transform: translateY(-1px);
+      filter: brightness(0.96);
     }
 
     .btn-secondary {
@@ -82,7 +85,7 @@
     }
 
     .btn-secondary:hover {
-      background: rgba(138, 106, 74, 0.08);
+      background: rgba(31, 58, 95, 0.06);
     }
 
     .section {
@@ -104,7 +107,7 @@
       position: sticky;
       top: 0;
       z-index: 1000;
-      background: rgba(247, 244, 239, 0.92);
+      background: rgba(246, 248, 252, 0.92);
       backdrop-filter: blur(8px);
       border-bottom: 1px solid var(--border);
     }
@@ -121,6 +124,7 @@
       font-size: 1.2rem;
       font-weight: 800;
       letter-spacing: 0.3px;
+      color: var(--accent);
     }
 
     .nav {
@@ -151,15 +155,24 @@
     }
 
     .hero-copy h1 {
-      font-size: clamp(2.4rem, 5vw, 4.8rem);
-      line-height: 1.05;
-      margin-bottom: 18px;
+      font-size: clamp(2.6rem, 5vw, 5rem);
+      line-height: 1.02;
+      margin-bottom: 12px;
+      color: var(--accent);
+    }
+
+    .hero-copy h2 {
+      font-size: clamp(1.1rem, 2vw, 1.5rem);
+      color: var(--accent-soft);
+      font-weight: 700;
+      margin-bottom: 16px;
+      letter-spacing: 0.2px;
     }
 
     .hero-copy p {
       color: var(--muted);
       font-size: 1.08rem;
-      max-width: 620px;
+      max-width: 650px;
       margin-bottom: 28px;
     }
 
@@ -199,6 +212,7 @@
 
     .hero-card {
       padding: 18px;
+      overflow: hidden;
     }
 
     .hero-card img {
@@ -230,6 +244,7 @@
     .contact-card h3 {
       margin-bottom: 10px;
       font-size: 1.15rem;
+      color: var(--accent);
     }
 
     .feature-card p,
@@ -264,8 +279,8 @@
     }
 
     .chip {
-      background: #f5eee6;
-      color: var(--accent-dark);
+      background: rgba(139, 46, 58, 0.08);
+      color: var(--accent-soft);
       padding: 8px 12px;
       border-radius: 999px;
       font-size: 0.9rem;
@@ -287,10 +302,11 @@
     .stars {
       font-size: 1.1rem;
       margin-bottom: 12px;
+      color: var(--accent-soft);
     }
 
     .cta-box {
-      background: linear-gradient(135deg, #8a6a4a, #6f543a);
+      background: linear-gradient(135deg, var(--accent), var(--accent-soft));
       color: #fff;
       border-radius: 28px;
       padding: 42px;
@@ -364,11 +380,12 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="hero-copy">
-          <h1>Relax, eleganza e ospitalità autentica</h1>
+          <h1>Villa Costanza</h1>
+          <h2>Rooms Apartment</h2>
           <p>
-            Benvenuti a Villa Costanza, un B&B pensato per chi desidera
-            tranquillità, comfort e un soggiorno piacevole in un ambiente curato
-            e accogliente.
+            A Ripa Teatina (CH), nel cuore dell’Abruzzo, Villa Costanza accoglie i suoi ospiti
+            in un ambiente elegante e rilassante, pensato per offrire comfort, tranquillità
+            e un soggiorno autentico.
           </p>
 
           <div class="hero-actions">
@@ -377,10 +394,10 @@
           </div>
 
           <div class="hero-badges">
-            <span class="badge">Colazione inclusa</span>
+            <span class="badge">Ripa Teatina (CH)</span>
+            <span class="badge">Abruzzo</span>
             <span class="badge">Wi-Fi gratuito</span>
-            <span class="badge">Parcheggio disponibile</span>
-            <span class="badge">Atmosfera rilassante</span>
+            <span class="badge">Atmosfera elegante</span>
           </div>
         </div>
 
@@ -395,31 +412,31 @@
 
     <section id="servizi" class="section">
       <div class="container">
-        <h2 class="section-title">Perché scegliere Villa Costanza</h2>
+        <h2 class="section-title">Un soggiorno di stile e tranquillità</h2>
         <p class="section-subtitle">
-          Un luogo ideale per chi cerca un soggiorno tranquillo, curato e
-          confortevole, con attenzione ai dettagli e ospitalità genuina.
+          Villa Costanza è il punto di partenza ideale per vivere il territorio abruzzese
+          tra relax, comfort e ospitalità autentica.
         </p>
 
         <div class="features-grid">
           <article class="feature-card">
             <h3>Accoglienza autentica</h3>
             <p>
-              Un ambiente familiare e curato, pensato per farti sentire subito a casa.
+              Un’atmosfera curata e riservata, pensata per farti sentire subito a tuo agio.
             </p>
           </article>
 
           <article class="feature-card">
-            <h3>Comfort e tranquillità</h3>
+            <h3>Comfort elegante</h3>
             <p>
-              Camere luminose, spazi rilassanti e tutto il necessario per un soggiorno piacevole.
+              Camere luminose, ambienti ordinati e uno stile raffinato per un soggiorno piacevole.
             </p>
           </article>
 
           <article class="feature-card">
-            <h3>Posizione comoda</h3>
+            <h3>Posizione strategica</h3>
             <p>
-              Una base perfetta per esplorare il territorio, il mare o il centro della zona.
+              Ripa Teatina è un punto ideale per scoprire mare, colline e bellezze dell’Abruzzo.
             </p>
           </article>
         </div>
@@ -430,7 +447,7 @@
       <div class="container">
         <h2 class="section-title">Le nostre camere</h2>
         <p class="section-subtitle">
-          Scegli la sistemazione più adatta al tuo soggiorno.
+          Ambienti curati e accoglienti, pensati per offrirti riposo, comfort e tranquillità.
         </p>
 
         <div class="rooms-grid">
@@ -442,12 +459,12 @@
             <div class="room-content">
               <h3>Camera Matrimoniale</h3>
               <p>
-                Una camera elegante e confortevole, ideale per coppie in cerca di relax.
+                Una soluzione elegante e confortevole, ideale per coppie in cerca di relax.
               </p>
               <div class="room-meta">
                 <span class="chip">2 ospiti</span>
                 <span class="chip">Bagno privato</span>
-                <span class="chip">Colazione inclusa</span>
+                <span class="chip">Comfort</span>
               </div>
             </div>
           </article>
@@ -460,7 +477,7 @@
             <div class="room-content">
               <h3>Camera Superior</h3>
               <p>
-                Più spazio, più comfort e un’atmosfera raffinata per un soggiorno speciale.
+                Più spazio e un’atmosfera raffinata per chi desidera un soggiorno speciale.
               </p>
               <div class="room-meta">
                 <span class="chip">2-3 ospiti</span>
@@ -473,7 +490,7 @@
           <article class="room-card">
             <img
               src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1200&q=80"
-              alt="Suite familiare di Villa Costanza"
+              alt="Family room di Villa Costanza"
             />
             <div class="room-content">
               <h3>Family Room</h3>
@@ -482,8 +499,8 @@
               </p>
               <div class="room-meta">
                 <span class="chip">4 ospiti</span>
+                <span class="chip">Spazio ampio</span>
                 <span class="chip">Ideale per famiglie</span>
-                <span class="chip">Ambiente ampio</span>
               </div>
             </div>
           </article>
@@ -495,7 +512,7 @@
       <div class="container">
         <h2 class="section-title">Galleria</h2>
         <p class="section-subtitle">
-          Alcuni dettagli dell’atmosfera e degli spazi di Villa Costanza.
+          Un primo sguardo all’atmosfera elegante e rilassante di Villa Costanza.
         </p>
 
         <div class="gallery-grid">
@@ -509,16 +526,16 @@
 
     <section id="recensioni" class="section">
       <div class="container">
-        <h2 class="section-title">Cosa dicono gli ospiti</h2>
+        <h2 class="section-title">L’esperienza degli ospiti</h2>
         <p class="section-subtitle">
-          Un assaggio dell’esperienza vissuta da chi ha soggiornato da noi.
+          Una selezione di impressioni che raccontano il soggiorno a Villa Costanza.
         </p>
 
         <div class="reviews-grid">
           <article class="review-card">
             <div class="stars">★★★★★</div>
             <p>
-              “Struttura bellissima, pulita e molto accogliente. Soggiorno davvero piacevole.”
+              “Struttura elegante, curata e molto accogliente. Un soggiorno davvero piacevole.”
             </p>
             <h3>- Giulia</h3>
           </article>
@@ -526,7 +543,7 @@
           <article class="review-card">
             <div class="stars">★★★★★</div>
             <p>
-              “Ottima ospitalità, camere curate e colazione eccellente. Consigliatissimo.”
+              “Camere molto belle, atmosfera tranquilla e ottima accoglienza.”
             </p>
             <h3>- Marco</h3>
           </article>
@@ -534,7 +551,7 @@
           <article class="review-card">
             <div class="stars">★★★★★</div>
             <p>
-              “Atmosfera rilassante e posizione comoda. Torneremo sicuramente.”
+              “Posizione comoda e ambiente rilassante. Esperienza molto positiva.”
             </p>
             <h3>- Elisa</h3>
           </article>
@@ -545,17 +562,13 @@
     <section id="prenota" class="section">
       <div class="container">
         <div class="cta-box">
-          <h2 class="section-title">Prenota il tuo soggiorno a Villa Costanza</h2>
+          <h2 class="section-title">Prenota il tuo soggiorno</h2>
           <p>
-            Contattaci per ricevere disponibilità, informazioni e la migliore tariffa diretta.
+            Contattaci per ricevere informazioni, disponibilità e tutti i dettagli su Villa Costanza.
           </p>
-          <a class="btn btn-primary" href="mailto:info@villacostanza.it">Scrivici ora</a>
-          <a
-            class="btn btn-secondary"
-            href="tel:+390000000000"
-            style="margin-left:10px; color:#fff; border-color:#fff;"
-          >
-            Chiama ora
+          <a class="btn btn-primary" href="mailto:info.costaofficial@gmail.com">Scrivici ora</a>
+          <a class="btn btn-secondary" href="#contatti" style="margin-left:10px; color:#fff; border-color:#fff;">
+            Vedi contatti
           </a>
         </div>
       </div>
@@ -566,9 +579,10 @@
         <article class="contact-card">
           <h3>Contatti</h3>
           <p><strong>Villa Costanza</strong></p>
-          <p>Inserisci qui l’indirizzo completo</p>
-          <p>Email: info@villacostanza.it</p>
-          <p>Telefono: +39 000 000 0000</p>
+          <p>Rooms Apartment</p>
+          <p>Via Iconicella 19, 66010 Ripa Teatina, Chieti</p>
+          <p>Email: info.costaofficial@gmail.com</p>
+          <p>Ripa Teatina (CH), Abruzzo</p>
           <p>Check-in: 14:00 - 20:00</p>
           <p>Check-out: entro le 10:30</p>
         </article>
@@ -580,7 +594,7 @@
             loading="lazy"
             allowfullscreen
             referrerpolicy="no-referrer-when-downgrade"
-            src="https://www.google.com/maps?q=Italia&output=embed">
+            src="https://www.google.com/maps?q=Via%20Iconicella%2019%2C%2066010%20Ripa%20Teatina%20CH&output=embed">
           </iframe>
         </div>
       </div>
