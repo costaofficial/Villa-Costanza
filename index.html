@@ -143,6 +143,10 @@
       color: var(--text);
     }
 
+    .mobile-booking {
+      display: none;
+    }
+
     .hero {
       padding: 78px 0 56px;
     }
@@ -280,7 +284,10 @@
     }
 
     .gallery-grid img {
-      height: 220px;
+      width: 100%;
+      aspect-ratio: 1 / 1;
+      object-fit: cover;
+      display: block;
     }
 
     .cta-box {
@@ -334,6 +341,7 @@
       .topbar-inner {
         min-height: auto;
         padding: 14px 0;
+        flex-direction: column;
         justify-content: center;
       }
 
@@ -344,6 +352,11 @@
 
       .nav {
         display: none;
+      }
+
+      .mobile-booking {
+        display: inline-block;
+        margin-top: 8px;
       }
 
       .hero {
@@ -422,8 +435,7 @@
         padding: 18px;
       }
 
-      .room-card img,
-      .gallery-grid img {
+      .room-card img {
         height: auto;
       }
 
@@ -476,6 +488,7 @@
   <header class="topbar">
     <div class="container topbar-inner">
       <a href="#" class="brand">Villa Costanza</a>
+
       <nav class="nav" aria-label="Navigazione principale">
         <a href="#camere">Camere</a>
         <a href="#servizi">Servizi</a>
@@ -483,6 +496,8 @@
         <a href="#contatti">Contatti</a>
         <a class="btn btn-primary" href="https://www.booking.com/hotel/it/b-amp-b-abruzzo-ripa-teatina.it.html?label=gen173bo-10CAsocUIcYi1hbXAtYi1hYnJ1enpvLXJpcGEtdGVhdGluYUgzWANocYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAZgCBqgCAbgC-6nAzQbAAgHSAiQ0YWNmODc5Yy04NTBmLTQxYTgtOWIzZi1hYzcyNWYwZWQzNTHYAgHgAgE&sid=b9300a3498c75021446d010d60da0ed7&dist=0&sb_price_type=total&type=total&" target="_blank" rel="noopener noreferrer">Prenota ora</a>
       </nav>
+
+      <a class="btn btn-primary mobile-booking" href="https://www.booking.com/hotel/it/b-amp-b-abruzzo-ripa-teatina.it.html?label=gen173bo-10CAsocUIcYi1hbXAtYi1hYnJ1enpvLXJpcGEtdGVhdGluYUgzWANocYgBAZgBM7gBF8gBDNgBA-gBAfgBAYgCAZgCBqgCAbgC-6nAzQbAAgHSAiQ0YWNmODc5Yy04NTBmLTQxYTgtOWIzZi1hYzcyNWYwZWQzNTHYAgHgAgE&sid=b9300a3498c75021446d010d60da0ed7&dist=0&sb_price_type=total&type=total&" target="_blank" rel="noopener noreferrer">Prenota ora</a>
     </div>
   </header>
 
@@ -620,7 +635,7 @@
         </p>
 
         <div class="gallery-grid">
-          <img src="Bagno.jpg"     alt="Bagno di Villa Costanza" /> />  
+          <img src="Bagno.jpg" alt="Bagno di Villa Costanza" />
           <img src="Terrazzo1.jpg" alt="Terrazzo di Villa Costanza" />
           <img src="Terrazzo2.jpg" alt="Terrazzo con vista" />
           <img src="Terrazzo3.jpg" alt="Spazio esterno di Villa Costanza" />
